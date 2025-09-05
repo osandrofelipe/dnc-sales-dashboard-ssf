@@ -1,11 +1,11 @@
 import type { DefaultTheme } from "styled-components"
 
 
-export const lighTheme: DefaultTheme = {
+export const lightTheme: DefaultTheme = {
   appBackground: '#FFF',
   appColor: '#000',
   appDefaultStroke: '#E0E0E0',
-  appLogo: 'dnc-logo-2.svg',
+  appLogo: 'dnc-logo_b.svg',
   appSkeletonFrom: '#EEE',
   appSkeletonTo: '#CCC',
   buttons: {
@@ -45,7 +45,7 @@ export const darkTheme: DefaultTheme = {
   appBackground: '#060B26',
   appColor: '#FFF',
   appDefaultStroke: '#21497D',
-  appLogo: 'dnc-logo-1.svg',
+  appLogo: 'dnc-logo_w.svg',
   appSkeletonFrom: '#060B26',
   appSkeletonTo: '#21497D',
   buttons: {
