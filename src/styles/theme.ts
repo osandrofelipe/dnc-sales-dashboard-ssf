@@ -23,7 +23,7 @@ export const lightTheme: DefaultTheme = {
     background: '#FFF',
     border: '#E0E0E0',
     success: '#008000',
-    warning: '#F7A3000',
+    warning: '#F7A300',
   },
   textInput: {
     active: '#FFF',
