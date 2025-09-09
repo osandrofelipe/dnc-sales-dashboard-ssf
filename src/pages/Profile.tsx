@@ -26,7 +26,7 @@ function Profile() {
                                 onClick={themeContext?.toggleTheme}
                             >
                                 Trocar para tema {' '}
-                                {themeContext?.appTheme === 'light' ? 'escuro' : 'clar'}
+                                {themeContext?.appTheme === 'light' ? 'escuro' : 'claro'}
                             </StyledButton>
                             <StyledButton className="alert" onClick={logout}> Logout </StyledButton>
                         </CardComponent>
