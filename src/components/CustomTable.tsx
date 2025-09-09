@@ -8,7 +8,7 @@ const TableWrapper = styled.div`
     table {
         width: 100%;
         border-collapse: collapse;
-        th, th {
+        th, td {
             height: ${pxToRem(48)};
             padding: 0 ${pxToRem(8)} 0 0;
             text-align: left;
