@@ -3,7 +3,7 @@ import type React from 'react'
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement>
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
-export type messageProps = {
+export type MessageProps = {
   msg: string
   type: 'error' | 'success'
 }
@@ -11,5 +11,5 @@ export type messageProps = {
 export interface FormComponentProps {
   inputs: InputProps[]
   buttons: ButtonProps[]
-  message?: messageProps
+  message?: MessageProps
 }
