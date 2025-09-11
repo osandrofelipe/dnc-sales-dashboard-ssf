@@ -21,7 +21,7 @@ import Grid from '@mui/material/Grid'
 import { currencyConverter, highlightTextConverter } from '@/utils'
 
 // TYPES
-import type { CustomChartProps, HighlightsData, NewsData, StarsData } from '@/types'
+import type { CustomChartProps, HighLightsData, NewsData, StarsData } from '@/types'
 
 function Home() {
     // HIGHLIGHTS
@@ -29,7 +29,7 @@ function Home() {
         data: highlightsData,
         loading: highlightsLoading,
         error: highlightsError,
-    } = useGet<HighlightsData[]>('sales/highlights')
+    } = useGet<HighLightsData[]>('sales/highlights')
 
     // SALES PER MONTH
     const {
