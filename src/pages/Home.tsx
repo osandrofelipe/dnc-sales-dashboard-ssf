@@ -231,7 +231,7 @@ function Home() {
                                 {!salesYearLoading && salesYearData && (
                                     <>
                                         <StyledH2 className="mb-1">
-                                            Valor de vendas por mês
+                                            Valor de vendas poor mês
                                         </StyledH2>
                                         <CustomChart
                                             labels={salesYearData.labels.map((label) => label)}
