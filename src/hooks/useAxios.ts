@@ -125,7 +125,6 @@ export const useDelete = <T>(endpoint: string) => {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${Cookies.get('Authorization')}`,
-          'Content-Type': 'application/json',
           ...config?.headers,
         },
         ...config,
