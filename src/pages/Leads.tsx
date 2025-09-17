@@ -75,7 +75,7 @@ function Leads() {
             clearMessage()
         } else if (createLeadsError) {
             setCreateMessage({
-                msg: 'Não foi possível realizar a operação. Entre em contato com nosso suporte',
+                msg: 'Não foi possível realizar a operação. Entre em contato com nosso suporte.',
                 type: 'error'
             })
         } else {
