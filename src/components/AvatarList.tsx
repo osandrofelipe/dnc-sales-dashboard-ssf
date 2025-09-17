@@ -1,7 +1,13 @@
-
 import { StyledH2, StyledSpan } from "@/components"
-import { Avatar, Box} from "@mui/material"
+
+// MUI
+import Avatar from "@mui/material/Avatar"
+import Box  from "@mui/material/Box"
+
+// UTILS
 import { pxToRem } from "@/utils"
+
+// TYPES
 import type { AvatarsListProps } from "@/types"
 
 function AvatarList(props: AvatarsListProps) {
@@ -13,8 +19,9 @@ function AvatarList(props: AvatarsListProps) {
                     alignItems: 'center',
                     display: 'flex',
                     padding: `${pxToRem(12)} 0`,
-                    key: {index}
-                }}>
+                }}
+                    key={index}
+                >
                     <Box>
                         <Avatar 
                             alt={item.name}
@@ -31,8 +38,7 @@ function AvatarList(props: AvatarsListProps) {
                         <StyledSpan>{item.subtitle}</StyledSpan>
                     </Box>
                 </Box>
-            ))
-           } 
+            ))} 
         </>
     )
 }

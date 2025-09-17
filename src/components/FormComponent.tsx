@@ -8,6 +8,7 @@ export const StyledForm= styled.form`
     flex-direction: column;
     row-gap: ${pxToRem(16)};
 `
+
 function FormComponent(props: FormComponentProps) {
     const { inputs, buttons, message} = props
     return (
