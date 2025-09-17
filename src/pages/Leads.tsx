@@ -8,7 +8,7 @@ import { Container, Box } from "@mui/material"
 //HOOKS
 import { useFormValidation, useGet, usePost, useDelete } from "@/hooks"
 
-//TYPES
+ //TYPES
 import type { InputProps, LeadsData, LeadsPostData, MessageProps } from "@/types"
 
 
