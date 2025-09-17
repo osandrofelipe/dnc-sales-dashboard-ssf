@@ -22,7 +22,6 @@ import Cookies from "js-cookie"
 function Profile() {
     const themeContext = useContext(AppThemeContext)
 
-    //HOOKS
     const [updateMessage, setUpdateMessage] = useState<MessageProps>({
         type: 'success',
         msg: ''
