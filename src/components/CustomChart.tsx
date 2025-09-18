@@ -9,7 +9,6 @@ import {
     Title,
     Tooltip,
     Legend,
-
 } from 'chart.js'
 import { Line } from "react-chartjs-2";
 import { Bar } from "react-chartjs-2";
@@ -53,13 +52,14 @@ function CustomChart(props: CustomChartProps) {
                 },
                 ticks: {
                     color: theme?.appDefaultStroke ?? '#E0E0E0'
-                }
+                },
             },
         },
         plugins: {
-            legend: { display: false },
-            title: { display: false }
-        }
+            legend: { 
+                display: false ,
+            },
+        },
     }
     const chartData = {
         labels,
@@ -68,10 +68,14 @@ function CustomChart(props: CustomChartProps) {
                 data: data,
                 borderColor: 'rgb(12, 112, 242)',
                 backgroundColor: 'rgba(12, 112, 242, 1)'
-            }
-        ]
+            },
+        ],
     }
-    return type === 'bar' ? (<Bar options={options} data={chartData} />) : (<Line options={options} data={chartData} />)
+    return type === 'bar' ? (
+        <Bar options={options} data={chartData} />
+    ) : (
+        <Line options={options} data={chartData} />
+    )
 }
 
 export default CustomChart
