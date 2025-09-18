@@ -14,7 +14,12 @@ import type { InputProps, LeadsData, LeadsPostData, MessageProps } from "@/types
 
 function Leads() {
     //HOOKS
-    const { data: createLeadsData, loading: createLeadsLoading, error: createLeadsError, postData: createLeadsPostData } = usePost<LeadsData, LeadsPostData>('leads/create', true)
+    const { 
+        data: createLeadsData, 
+        loading: createLeadsLoading, 
+        error: createLeadsError, 
+        postData: createLeadsPostData 
+    } = usePost<LeadsData, LeadsPostData>('leads/create', true)
     const {
         data: leadsData,
         loading: leadsLoading,
