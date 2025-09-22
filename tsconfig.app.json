@@ -22,12 +22,15 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    /* Imports */
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@types": ["src/types/index.ts"],
       "@types/*": ["src/types/*"]
-    }
+    },
+/* Types for tests */
+    "types": ["jest", "node", "@testing-library/jest-dom"]
   },
   "include": ["src"]
 }
