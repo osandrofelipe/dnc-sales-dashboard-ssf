@@ -129,6 +129,7 @@ function Profile() {
                                                             {
                                                                 className: 'primary',
                                                                 disabled: !formValid || profileUpdateLoading,
+                                                                id: "update-profile",
                                                                 type: 'submit',
                                                                 onClick: handleSubmit,
                                                                 children: profileUpdateLoading ? 'Aguarde...' : 'Atualizar meu perfil'
@@ -136,6 +137,7 @@ function Profile() {
                                                             {
                                                                 className: 'alert',
                                                                 disabled: profileDeleteLoading,
+                                                                id: "delete-profile",
                                                                 type: 'button',
                                                                 onClick: handleDelete,
                                                                 children: profileDeleteLoading ? 'Aguarde...' : 'Excluir minha conta' 
@@ -156,13 +158,14 @@ function Profile() {
                         <CardComponent>
                             <StyledH2 className="mb-1">Definições de conta</StyledH2>
                             <StyledButton
+                                id="theme-switch"
                                 className="primary mb-1"
                                 onClick={themeContext?.toggleTheme}
                             >
                                 Trocar para tema {' '}
                                 {themeContext?.appTheme === 'light' ? 'escuro' : 'claro'}
                             </StyledButton>
-                            <StyledButton className="alert" onClick={logout}> Logout </StyledButton>
+                            <StyledButton id="logout" className="alert" onClick={logout}> Logout </StyledButton>
                         </CardComponent>
                     </Box>
                 </Box>
