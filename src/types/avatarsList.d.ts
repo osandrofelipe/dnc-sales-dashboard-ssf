@@ -1,9 +1,9 @@
 export type ListaDataProps = {
-    avatar: string
-    name: string
-    subtitle: string
+  avatar: string
+  name: string
+  subtitle: string
 }
 
 export interface AvatarsListProps {
-    listData: ListaDataProps[]
+  listData: ListaDataProps[]
 }
