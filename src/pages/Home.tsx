@@ -95,7 +95,7 @@ function Home() {
                                             ? highlightsData[1].subtitle
                                             : 'skeleton-loading skeleton-loading-mh-1'
                                     }
-                                    id="month-goal"
+                                    id="month-goals"
                                 >
                                     {!highlightsLoading && highlightsData && (
                                         <>
